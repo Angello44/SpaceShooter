@@ -24,7 +24,15 @@ canvas {
 
 #controls {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  width: min(400px, 100vw);
+  padding: 0 16px;
+}
+
+#moveBtn {
+  display: flex;
+  gap: 12px;
 }
 
 #controls button {
