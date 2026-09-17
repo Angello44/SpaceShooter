@@ -1,24 +1,24 @@
 # 🚀 Space Shooter
 
-Game tembak-tembakan berbasis browser, dimana alien menyerang dan mengikuti pergerakan player. Dibuat murni dengan **HTML5 Canvas**, **CSS**, dan **JavaScript** — tanpa framework, tanpa library eksternal.
+Game tembak-tembakan berbasis browser dimana alien menyerang dan aktif mengejar player. Dibuat murni dengan **HTML5 Canvas**, **CSS**, dan **Vanilla JavaScript** — tanpa framework, tanpa library eksternal.
 
-## 🎮 Demo
+## 🎮 Live Demo
 
-Buka file `index.html` langsung di browser, atau deploy ke GitHub Pages.
+**▶ [Mainkan Sekarang](https://angello44.github.io/SpaceShooter)**
 
 ## 📸 Screenshot
 
-> _(tambahkan screenshot game di sini)_
+![Space Shooter Gameplay](screenshot.png)
 
 ## ✨ Fitur
 
 - 🛸 **3 tipe alien** — Drone (cepat), Hunter (tembak balik), Boss (HP tebal)
-- 🎯 **AI homing** — alien aktif mengejar posisi player
+- 🎯 **AI homing** — alien aktif mengejar posisi player secara real-time
 - 💥 **Efek ledakan partikel**
 - 🌟 **Background bintang** bergerak
-- ❤️ **Sistem nyawa** — +1 nyawa setiap 1100 score
-- 🏆 **High score** tersimpan di localStorage
-- 🔊 **Sound effect** via Web Audio API (tanpa file audio)
+- ❤️ **Sistem nyawa** — +1 nyawa bonus setiap 1100 score
+- 🏆 **High score** tersimpan otomatis di browser (localStorage)
+- 🔊 **Sound effect** via Web Audio API — tanpa file audio eksternal
 - 📱 **Mobile-friendly** — tombol kontrol layar sentuh
 - ⌨️ **Keyboard support** — bisa dimainkan di desktop
 
@@ -31,13 +31,13 @@ Buka file `index.html` langsung di browser, atau deploy ke GitHub Pages.
 | Tembak          | `SPACE` (tahan)      | 🔥               |
 | Mulai / Restart | `SPACE` atau `ENTER` | Tap tombol MULAI |
 
-## 👾 Musuh
+## 👾 Tipe Musuh
 
-| Tipe   | Warna | HP  | Kemampuan                         |
-| ------ | ----- | --- | --------------------------------- |
-| Drone  | Hijau | 1   | Mengejar cepat                    |
-| Hunter | Ungu  | 3   | Mengejar + tembak balik           |
-| Boss   | Merah | 7   | Lambat tapi kuat, muncul level 4+ |
+| Tipe   | Warna    | HP  | Kemampuan               | Muncul   |
+| ------ | -------- | --- | ----------------------- | -------- |
+| Drone  | 🟢 Hijau | 1   | Mengejar cepat          | Level 1+ |
+| Hunter | 🟣 Ungu  | 3   | Mengejar + tembak balik | Level 2+ |
+| Boss   | 🔴 Merah | 7   | Lambat tapi sangat kuat | Level 4+ |
 
 ## 📊 Sistem Skor
 
@@ -48,25 +48,18 @@ Buka file `index.html` langsung di browser, atau deploy ke GitHub Pages.
 | Boss   | +50  |
 
 - Level naik setiap **150 poin**
-- +1 nyawa setiap **1100 poin**
+- Bonus **+1 nyawa** setiap **1100 poin**
 - High score disimpan otomatis di browser
 
 ## 📁 Struktur File
 
 ```
-space-game/
-├── index.html   # Struktur HTML
-├── style.css    # Tampilan & layout
-├── game.js      # Logika game
-└── README.md    # Dokumentasi ini
+SpaceShooter/
+├── index.html      # Struktur HTML
+├── style.css       # Tampilan & layout
+├── game.js         # Logika game (canvas, AI, audio)
+└── README.md       # Dokumentasi
 ```
-
-## 🚀 Cara Deploy ke GitHub Pages
-
-1. Push ke repository GitHub
-2. Buka **Settings** → **Pages**
-3. Source: pilih branch `main`, folder `/ (root)`
-4. Klik **Save** — game bisa diakses di `https://username.github.io/nama-repo`
 
 ## 🛠️ Teknologi
 
@@ -74,6 +67,16 @@ space-game/
 - Web Audio API
 - Vanilla JavaScript (ES6+)
 - CSS3
+
+## 🚀 Jalankan Lokal
+
+Tidak perlu install apapun. Cukup clone dan buka file HTML:
+
+```bash
+git clone https://github.com/Angello44/SpaceShooter.git
+cd SpaceShooter
+# Buka index.html di browser
+```
 
 ## 📄 Lisensi
 
