@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+  gap: 10px;
+}
+
+canvas {
+  display: block;
+  border: 2px solid #00ff88;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+}
+
+#controls button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #00ff88;
+  background: transparent;
+  color: #00ff88;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+#controls button:active {
+  background: rgba(0, 255, 136, 0.3);
+}
+
+#fireBtn {
+  border-color: #ff4466 !important;
+  color: #ff4466 !important;
+}
+
+#fireBtn:active {
+  background: rgba(255, 68, 102, 0.3) !important;
+}
